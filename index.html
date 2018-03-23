@@ -5,8 +5,176 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ThreadStory</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116342795-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116342795-1');
+  </script>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: #5659da;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.sub-text {
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 0;
+}
+.phone-icon {
+  width: 22px;
+  position: relative;
+  top: 5px;
+  margin-left: 5px;
+}
+.phone {
+  font-size: 22px;
+}
+.phone a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px dashed white;
+}
+.mountain-svg{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.rocket-svg {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.logo {
+  margin-top: -100px;
+}
+.logo-long {
+  margin-left: 10px;
+}
+@media(max-width: 900px) {
+  .mountain-svg{
+    width: 45%;
+  }
+  .rocket-svg {
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media(max-width: 600px) {
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-long {
+    width: 75%;
+  margin-left: 0px;
+  }
+  .logo-small {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 400;
+  }
+}
+
+@media(max-width: 400px) {
+  .sub-text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.line-svg {
+  animation: offset 0.6s linear infinite;
+  stroke-dasharray: 6;
+  stroke-dashoffset: 0;
+}
+.line-svg-2 {
+  animation-delay: 0.5s;
+}
+.line-svg-3 {
+  animation-delay: 1s;
+}
+
+@keyframes offset {
+  to {
+    stroke-dashoffset: 29;
+  }
+}
+
+.phone img {
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+}
+.phone:hover img{
+  transform: rotate(15deg);
+}
+
+</style>
 </head>
 <body>
-  
+  <div class="logo">
+    <img src="image/ts-logo.svg" class="logo-small"/>
+    <img src="image/ThreadStory.svg" class="logo-long"/>
+  </div>
+  <h1>Custom Merchandising by the people, for the people</h1>
+  <p class="sub-text">
+    <span>For Corporate Order</span>
+    <span class="phone">
+      <img src="image/phone-receiver-new.svg" class="phone-icon"/>
+      <a href="tel:+91-7019275652">9591131038</a>
+    </span>
+  </p>
+
+  <img src="image/mountain.svg" class="mountain-svg"/>
+  <svg class="rocket-svg" width="392px" height="357px" viewBox="0 0 392 357" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(0.000000, -443.000000)">
+      <g transform="translate(0.000000, 443.000000)">
+      <rect fill="transparent" x="0" y="32" width="392" height="329"></rect>
+      <path d="M214.343126,0.02247401 C214.146896,-0.00749133668 213.947494,-0.00749133668 213.751264,0.02247401 C195.628592,3.62245717 178.954455,12.4286148 165.777548,25.3590273 L148.556214,26.2360619 C148.071253,26.2579877 147.611676,26.4594621 147.267542,26.8012619 L129.5776,44.4588906 C128.811964,45.2167946 128.806838,46.4509771 129.566129,47.2152153 C129.935646,47.5869805 130.439155,47.7947889 130.963898,47.7916219 L131.100575,47.7916219 L151.035929,46.4273459 C150.254917,48.0644771 149.512954,49.7405875 148.829568,51.4946566 C148.546207,52.2133377 148.714613,53.0311724 149.259125,53.5800498 L162.380142,66.6770989 C162.930023,67.2206167 163.749355,67.388715 164.469351,67.1058714 C166.285206,66.4042437 168.003434,65.6246575 169.702137,64.8255816 L168.335365,84.938907 C168.273372,86.0135179 169.095876,86.9348914 170.172454,86.9967711 C170.723068,87.0284418 171.261723,86.825993 171.65467,86.4396105 L189.344611,68.7819818 C189.687037,68.4384766 189.88888,67.9797388 189.910846,67.4956645 L190.809011,49.9549737 C203.653744,36.822356 212.397915,20.2466468 215.977151,2.24429484 C216.140675,1.18040322 215.408964,0.185699882 214.343126,0.02247401 Z M136.040482,43.4649182 L149.512954,30.0170552 L162.028686,29.3738966 C158.617612,33.3636729 155.627309,37.6937873 153.105614,42.2955388 L136.040482,43.4649182 Z M186.064357,66.501692 L172.591885,79.949555 L173.763404,62.6817194 C178.375286,60.1524492 182.713568,57.1546964 186.708693,53.7359671 L186.064357,66.501692 Z M164.235047,62.9545746 L152.929886,51.6700635 C167.163846,16.9589854 201.528413,6.72691582 211.505852,4.44662602 C209.26044,14.4448198 199.068222,48.7271254 164.235047,62.9545746 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+      <path class="line-svg line-svg-1" d="M123.5,74.5 L144.5,54.5" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></path>
+      <path class="line-svg line-svg-2" d="M123.5,92.5 L143.673757,72.326243" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></path>
+      <path class="line-svg line-svg-3" d="M140.5,91.5 L159.379752,72.6202484" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></path>
+      <circle stroke="#FFFFFF" stroke-width="4" cx="190" cy="26" r="7"></circle>
+      </g>
+      </g>
+    </g>
+  </svg>
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAVaTa136MvNJubVFrid-D3jlNHIntjNJg",
+      authDomain: "threadstory-7ad8a.firebaseapp.com",
+      databaseURL: "https://threadstory-7ad8a.firebaseio.com",
+      projectId: "threadstory-7ad8a",
+      storageBucket: "",
+      messagingSenderId: "650499543092"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
 </html>
